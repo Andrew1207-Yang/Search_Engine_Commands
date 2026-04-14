@@ -3,6 +3,7 @@
 IP_FILE="ips.txt"
 REPO_URL="https://github.com/nmettke/Search-Engines.git"
 SSH_USER="ayayang" # TODO: Change to the default GCP user (e.g., ubuntu, or your username)
+LOG_DIR="logs"
 
 # Check if IP file exists
 if [ ! -f "$IP_FILE" ]; then
@@ -45,17 +46,20 @@ while IFS= read -r IP; do
         # Discard local changes and pull latest
         git reset --hard HEAD
         git pull
+        git checkout receive_bug
 
         # 3. Build the project
         chmod +x setup.sh
         ./setup.sh -d
 
         # 4. Stop any existing crawler so they don't fight for RAM/Ports
-        pkill -9 -f search_engine_distributed
+        # pkill -9 -f '[s]earch_engine_distributed'
 
-        # 5. Run in the background using nohup
-        # nohup prevents the process from dying when the SSH session closes
-        nohup ./build/src/search_engine_distributed $INDEX 256 > crawler.log 2>&1 &
+        # 5. Write the background command to run.sh, make it executable, and launch it
+        echo \"#!/bin/bash\" > ./run.sh
+        echo \"nohup ./build/src/search_engine_distributed $INDEX 256 > crawler.log 2>&1 &\" >> ./run.sh
+        chmod +x ./run.sh
+        ./run.sh
         
         echo '--- [Machine $INDEX] Crawler Started Successfully ---'
     " > "$LOG_DIR/machine_${INDEX}.log" 2>&1 & # <-- The '&' here is magic. It runs the SSH command in the background!
