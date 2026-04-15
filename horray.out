@@ -1,0 +1,138 @@
+=====================================================
+   Scanning 44 VMs for Crawler Health...
+=====================================================
+[Machine 0 - 34.130.43.20] RUNNING (PID: 23506)
+   Latest activity:
+      Crawled [4461] https://www.w3schools.com/php/func_filesystem_clearstat
+[Machine 1 - 34.130.82.156] RUNNING (PID: 21764)
+   Latest activity:
+      Crawled [4392] https://archive.org/details/visualproceeding0000sigg
+[Machine 2 - 34.124.113.238] RUNNING (PID: 22958)
+   Latest activity:
+      Crawled [4535] https://man7.org/linux/man-pages/man3/umad_get_port.3.html
+[Machine 3 - 34.130.64.46] RUNNING (PID: 21874)
+   Latest activity:
+      Crawled [4222] https://en.wikipedia.org/wiki/Template_talk:World_Heritage_Sites_in_Greece
+[Machine 4 - 34.130.43.3] RUNNING (PID: 21386)
+   Latest activity:
+      Crawled [4284] https://en.wikipedia.org/wiki/Leonard_Hobhouse
+[Machine 5 - 34.130.137.49] RUNNING (PID: 22139)
+   Latest activity:
+      Crawled [4358] https://www.bbc.co.uk/news/uk-england-cornwall-44113912
+[Machine 6 - 34.130.64.163] RUNNING (PID: 21420)
+   Latest activity:
+      Crawled [4273] https://www.wikidata.org/wiki/Q1398
+[Machine 7 - 34.130.229.83] RUNNING (PID: 16483)
+   Latest activity:
+      Crawled [4279] https://man7.org/linux/man-pages/man3/auplugin_fgets_more.3.html
+[Machine 8 - 34.130.16.28] RUNNING (PID: 19557)
+   Latest activity:
+      Crawled [4199] https://en.wikipedia.org/wiki/Telephone_numbers_in_India
+[Machine 9 - 34.130.91.157] RUNNING (PID: 19664)
+   Latest activity:
+      Crawled [4374] https://archive.org/details/shakespearelife00hona
+[Machine 10 - 34.130.93.78] RUNNING (PID: 19471)
+   Latest activity:
+      Crawled [4256] https://books.google.com/books?id=m-Mv7awvtIQC
+[Machine 11 - 34.130.21.35] RUNNING (PID: 19574)
+   Latest activity:
+      Crawled [4510] https://ga.wikipedia.org/wiki/No%C3%ABl_Coward
+[Machine 12 - 34.130.79.253] RUNNING (PID: 22766)
+   Latest activity:
+      Crawled [4359] https://en.wikipedia.org/wiki/Malebranche_(Divine_Comedy)
+[Machine 13 - 34.130.0.117] RUNNING (PID: 21271)
+   Latest activity:
+      Crawled [4526] https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_tags_signs_large
+[Machine 14 - 34.130.198.23] RUNNING (PID: 22618)
+   Latest activity:
+      Crawled [4542] https://www.linkedin.com/company/sound-transit?trk=public_jobs_jserp-result_job-search-card-subtitle
+[Machine 15 - 34.130.157.28] RUNNING (PID: 21975)
+   Latest activity:
+      Crawled [4461] https://archive.org/details/smithscanadianga00smit
+[Machine 16 - 34.130.190.162] RUNNING (PID: 21118)
+   Latest activity:
+      Crawled [4502] https://da.wikipedia.org/wiki/Gear
+[Machine 17 - 34.130.122.145] RUNNING (PID: 21257)
+   Latest activity:
+      Crawled [4440] https://en.wikipedia.org/wiki/Blood-Horse_Publications
+[Machine 18 - 34.130.29.159] RUNNING (PID: 21257)
+   Latest activity:
+      Crawled [4080] https://www.w3schools.com/mysql/mysql_join_inner.asp
+[Machine 19 - 34.130.82.240] RUNNING (PID: 22043)
+   Latest activity:
+      Crawled [4377] https://man7.org/linux/man-pages/man1/flatpak-build-export.1.html
+[Machine 20 - 34.130.157.196] RUNNING (PID: 21030)
+   Latest activity:
+      Crawled [4179] https://books.google.com/books?id=tF_0DwAAQBAJ&amp;sitesec=buy&amp;source=gbs_buy_r
+[Machine 21 - 34.130.214.145] RUNNING (PID: 20635)
+   Latest activity:
+      Blocked by robots.txt: https://en.wikipedia.org/w/index.php?title=William_Barley&amp;action=info
+[Machine 22 - 34.130.119.2] RUNNING (PID: 21159)
+   Latest activity:
+      Crawled [4059] https://en.wikipedia.org/wiki/Minke_whales
+[Machine 23 - 34.130.216.240] RUNNING (PID: 21355)
+   Latest activity:
+      Crawled [4104] https://en.wikipedia.org/wiki/List_of_state_leaders_in_the_10th-century_Holy_Roman_Empire
+[Machine 24 - 34.130.243.215] RUNNING (PID: 20738)
+   Latest activity:
+      Crawled [4282] https://oc.wikipedia.org/wiki/Sist%C3%A8ma_de_posicionament_global
+[Machine 25 - 34.130.130.196] RUNNING (PID: 22163)
+   Latest activity:
+      Crawled [4330] http://www.signonsandiego.com/news/mexico/20060906-9999-1n6storm.html
+[Machine 26 - 34.130.230.21] RUNNING (PID: 22440)
+   Latest activity:
+      Crawled [4173] https://tr.wikipedia.org/wiki/Kategori:Bilimsel_terminoloji
+[Machine 27 - 34.130.161.223] RUNNING (PID: 22433)
+   Latest activity:
+      Crawled [4443] https://web.archive.org/web/20100527031348/http://www.pcmag.com/article2/0,2817,2364136,00.asp
+[Machine 28 - 34.130.5.230] RUNNING (PID: 22636)
+   Latest activity:
+      Crawled [4275] https://lux.collections.yale.edu/view/place/1cb410a7-4515-4d9b-9e4d-b8ba6c21c18a
+[Machine 29 - 34.130.138.190] RUNNING (PID: 21811)
+   Latest activity:
+      Crawled [4395] https://www.wikidata.org/wiki/Q6240
+[Machine 30 - 34.130.249.128] RUNNING (PID: 22422)
+   Latest activity:
+      Crawled [4486] https://pl.wikipedia.org/wiki/Tybinga
+[Machine 31 - 34.130.93.208] RUNNING (PID: 21984)
+   Latest activity:
+      Crawled [4345] https://archive.org/details/furyinsidelifeof00malc
+[Machine 32 - 34.130.104.67] RUNNING (PID: 20957)
+   Latest activity:
+      Crawled [4421] https://no.wikipedia.org/wiki/Roy_Lichtenstein
+[Machine 33 - 34.130.81.209] RUNNING (PID: 21926)
+   Latest activity:
+      Crawled [4490] https://en.wikipedia.org/wiki/Alstonefield
+[Machine 34 - 34.130.117.222] RUNNING (PID: 20737)
+   Latest activity:
+      Blocked by robots.txt: https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&amp;returnto=Maya+stelae
+[Machine 35 - 34.130.62.205] RUNNING (PID: 20915)
+   Latest activity:
+      Crawled [4406] https://archive.org/details/paulgoodman0000widm
+[Machine 36 - 34.124.120.173] RUNNING (PID: 20782)
+   Latest activity:
+      Crawled [4219] https://dribbble.com/rholesinsky/reviews
+[Machine 37 - 34.130.240.109] RUNNING (PID: 20879)
+   Latest activity:
+      Crawled [4370] http://www.gpsworld.com/gpsworld/article/articleDetail.jsp?id=154870&amp;pageID=6
+[Machine 38 - 34.130.84.218] RUNNING (PID: 21196)
+   Latest activity:
+      Blocked by robots.txt: https://en.wikipedia.org/w/index.php?title=T%C3%BCbingen&amp;action=history
+[Machine 39 - 34.45.219.149] RUNNING (PID: 16108)
+   Latest activity:
+      Crawled [3720] https://commons.wikimedia.org/wiki/Category:Josephine_Butler
+[Machine 40 - 34.9.132.225] RUNNING (PID: 16019)
+   Latest activity:
+      Crawled [3949] https://lt.wikipedia.org/wiki/Telekomunikacija
+[Machine 41 - 34.9.191.70] RUNNING (PID: 16595)
+   Latest activity:
+      Crawled [3674] https://books.google.com/books?id=MGl35Q3W5twC
+[Machine 42 - 136.116.245.6] RUNNING (PID: 23339)
+   Latest activity:
+      Crawled [3791] http://www.unido.org/idb
+[Machine 43 - 34.9.119.101] RUNNING (PID: 16015)
+   Latest activity:
+      Crawled [3719] https://archive.org/details/constitutionalgo0000wils_h2r1/
+=====================================================
+   Scan Complete.
+=====================================================

@@ -31,6 +31,7 @@ while IFS= read -r IP; do
     # connecting to a new IP for the first time.
     ssh -i ~/.ssh/gcp_key -o StrictHostKeyChecking=no "$SSH_USER@$IP" "
         echo '--- [Machine $INDEX] Connected ---'
+        set -e
 
         # 1. CRITICAL: Set file descriptors for our 25M token flush
         ulimit -n 65000
@@ -46,7 +47,7 @@ while IFS= read -r IP; do
         # Discard local changes and pull latest
         git reset --hard HEAD
         git pull
-        git checkout receive_bug
+        git checkout main
 
         # 3. Build the project
         chmod +x setup.sh
