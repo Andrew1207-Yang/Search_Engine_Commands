@@ -1,5 +1,5 @@
 # Set your target group and the directory name
-IP_FILE="ips_sub.txt"
+IP_FILE="ips.txt"
 SSH_USER="ayayang" # TODO: Change to the default GCP user (e.g., ubuntu, or your username)
 
 

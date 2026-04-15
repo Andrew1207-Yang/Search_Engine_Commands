@@ -53,7 +53,7 @@ while IFS= read -r IP; do
             echo \"[Machine $INDEX - $IP] RUNNING (PID: \$PID)\"
             if [ -n \"\$LOG_PATH\" ]; then
                 echo '   Latest activity:'
-                tail -n 1 \"\$LOG_PATH\" | sed 's/^/      /'
+                tail -n 50 \"\$LOG_PATH\" | sed 's/^/      /'
             else
                 echo '   Latest activity:'
                 echo '      Process is running, but no known crawler log file was found.'

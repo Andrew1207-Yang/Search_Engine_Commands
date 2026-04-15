@@ -2,8 +2,9 @@
 
 IP_FILE="ips.txt"
 REPO_URL="https://github.com/nmettke/Search-Engines.git"
-SSH_USER="ayayang" # TODO: Change to the default GCP user (e.g., ubuntu, or your username)
+SSH_USER="ayayang"
 LOG_DIR="logs"
+SEARCH_PEERS="10.128.0.14:9000,10.128.0.15:9000"
 
 # Check if IP file exists
 if [ ! -f "$IP_FILE" ]; then
@@ -11,7 +12,7 @@ if [ ! -f "$IP_FILE" ]; then
     exit 1
 fi
 
-echo "Starting deployment to 44 VMs..."
+echo "Starting deployment to 8 VMs..."
 INDEX=0
 mkdir -p "$LOG_DIR"
 
@@ -34,20 +35,18 @@ while IFS= read -r IP; do
         set -e
 
         # 1. CRITICAL: Set file descriptors for our 25M token flush
-        ulimit -n 65000
+        sudo sysctl -w net.ipv4.ip_local_port_range='1024 65535'
+        sudo sysctl -w net.ipv4.tcp_tw_reuse=1
+        ulimit -n 100000
 
-        # 2. Clone or Update the repository
+        # 2. Clone the repository
         if [ -d 'Search-Engines' ]; then
             rm -rf Search-Engines
         fi
         
         git clone $REPO_URL Search-Engines
         cd Search-Engines
-        
-        # Discard local changes and pull latest
-        git reset --hard HEAD
-        git pull
-        git checkout main
+        git checkout crawler-refactor
 
         # 3. Build the project
         chmod +x setup.sh
@@ -58,7 +57,7 @@ while IFS= read -r IP; do
 
         # 5. Write the background command to run.sh, make it executable, and launch it
         echo \"#!/bin/bash\" > ./run.sh
-        echo \"nohup ./build/src/search_engine_distributed $INDEX 256 > crawler.log 2>&1 &\" >> ./run.sh
+        echo \"nohup env SEARCH_PEERS=$SEARCH_PEERS ./build/src/search_engine_distributed $INDEX 5120 > crawler.log 2>&1 &\" >> ./run.sh
         chmod +x ./run.sh
         ./run.sh
         
